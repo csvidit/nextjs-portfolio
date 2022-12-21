@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "clash";
+    src: url("../public/clash.woff2") format("woff2"),
+      url("../public/clash.woff") format("woff"),
+      url("../public/clash.ttf") format("truetype");
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+  }
+  
+  .clash_btn {
+    font-family: 'clash', sans-serif;
+    font-weight: 500;
+  }
+
+  .clash_title{
+    font-family: 'clash', sans-serif;
+    font-weight: 300;
+  }
+
+  .clash_subtitle{
+    font-family: 'clash', sans-serif;
+    font-weight: 500;
+  }
+  

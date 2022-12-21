@@ -9,8 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@barba/core": "^2.9.7",
+    "@next/font": "^13.0.1",
+    "bootstrap-icons": "^1.10.2",
+    "flubber": "^0.4.2",
+    "framer-motion": "^8.0.1",
     "next": "13.0.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-spring": "^9.5.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.1"
   }
 }

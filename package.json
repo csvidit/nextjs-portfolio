@@ -11,6 +11,7 @@
   "dependencies": {
     "@barba/core": "^2.9.7",
     "@next/font": "^13.0.1",
+    "@react-spring/web": "^9.6.1",
     "bootstrap-icons": "^1.10.2",
     "flubber": "^0.4.2",
     "framer-motion": "^8.0.1",

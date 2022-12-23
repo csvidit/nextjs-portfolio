@@ -11,7 +11,7 @@ import JumboV from "../components/JumboV";
 const mainContainerStyles =
   "w-screen h-screen flex flex-col space-y-6 justify-center";
 
-const headerContainerStyles = "ml-20";
+const headerContainerStyles = "ml-20 mr-20";
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
         <Head></Head>
         <JumboSubtitle>Welcome to the world of</JumboSubtitle>
         <JumboTitle>Vidit Khandelwal</JumboTitle>
-        <MainLink label="Let's jump in" link="/home"></MainLink>
+        <MainLink label="Let's jump in" link="/launchpad"></MainLink>
         <ButtonContainer>
         </ButtonContainer>
       </div>

@@ -1,8 +1,8 @@
 import styles from "./Font.module.css";
 
-const divStyles = "flex flex-row mr-10 text-3xl text-lime-400 uppercase"
+const divStyles = "flex flex-row mr-10 text-2xl text-lime-400 uppercase"
 
-const JumboSubtitle = (props) =>
+const Subtitle2 = (props) =>
 {
     return(
         <div>
@@ -11,4 +11,4 @@ const JumboSubtitle = (props) =>
     );
 }
 
-export default JumboSubtitle;
+export default Subtitle2;

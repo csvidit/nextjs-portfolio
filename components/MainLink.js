@@ -1,5 +1,6 @@
 import styles from "./Font.module.css";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; 
+import Link from "next/link"
 
 const divStyles = "flex flex-row text-xl";
 const linkStyles = "flex flex-row space-x-2 self-center";
@@ -11,7 +12,7 @@ const MainLink = (props) => {
   return (
     <div className={styles.clash_title + " " + divStyles}>
       <motion.div animate={{ x: 0, skewX: 0, color: "#64748B", fill: "#64748B"}} whileHover={{ x: 10, skewX: -10, color: "#FFFFFF", fill:"#FFFFFF"}} className={linkStyles}>
-        <a href={link} className={linkStyles}>
+        <Link href={link} className={linkStyles}>
           <p className="self-center">{label}</p>
           <motion.svg
           xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +27,7 @@ const MainLink = (props) => {
             d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
           />
         </motion.svg>
-        </a>
+        </Link>
       </motion.div>
     </div>
   );

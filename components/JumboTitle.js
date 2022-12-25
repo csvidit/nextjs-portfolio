@@ -6,9 +6,9 @@ const divStyles = "flex flex-row text-6xl text-lime-400 mt-3 mb-3";
 const JumboTitle = (props) => {
   {
     return (
-      <div class={divStyles}>
-        <motion.div>
-          <h1 class={styles.clash_title + " " + divStyles}>{props.children}</h1>
+      <div className={divStyles}>
+        <motion.div whileHover>
+          <h1 className={styles.clash_title + " " + divStyles}>{props.children}</h1>
         </motion.div>
       </div>
     );

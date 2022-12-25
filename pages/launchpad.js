@@ -10,7 +10,7 @@ import LaunchpadLinkCS from "../components/LaunchpadLinkCS";
 const mainContainerStyles =
   "w-screen h-screen flex flex-col space-y-6 justify-center";
 
-const headerContainerStyles = "ml-20 mr-20";
+const headerContainerStyles = "ml-5 mr-5 xl:ml-20 xl:mr-20";
 
 export default function Launchpad() {
   const [springs0, api0] = useSpring(() => ({
@@ -21,15 +21,14 @@ export default function Launchpad() {
     from: { y: 50 },
     to: { y: 0 },
   }));
-  //   const springs0 = useSpring({ from: { y: -50 }, to: { y: 0 } });
-  //   const springs1 = useSpring({ from: { y: 50 }, to: { y: 0 } });
+
   const nonClick = () => {
     api0.start({
       from: {
-        x: 0,
+        opacity: 1,
       },
       to: {
-        x: 25,
+        opacity: 0,
       },
     });
   };
@@ -46,10 +45,10 @@ export default function Launchpad() {
         </animated.div> */}
         <animated.div style={{ ...springs1 }}>
           <LaunchpadLinksContainer>
-            <LaunchpadLinkAll>ALL</LaunchpadLinkAll>
-            <LaunchpadLinkAll>CODING PROJECTS</LaunchpadLinkAll>
-            <LaunchpadLinkAll>LITERATURE</LaunchpadLinkAll>
-            <LaunchpadLinkAll>ACADEMIC PAPERS</LaunchpadLinkAll>
+            <LaunchpadLinkAll link="/all">ALL</LaunchpadLinkAll>
+            <LaunchpadLinkAll link="https://github.com/csvidit">CODING PROJECTS</LaunchpadLinkAll>
+            <LaunchpadLinkAll link="/lit">LITERATURE</LaunchpadLinkAll>
+            <LaunchpadLinkAll link="/acad">ACADEMIC PAPERS</LaunchpadLinkAll>
           </LaunchpadLinksContainer>
         </animated.div>
       </div>

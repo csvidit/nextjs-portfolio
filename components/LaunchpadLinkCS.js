@@ -1,5 +1,4 @@
 import fontStyles from "./Font.module.css";
-import colors from "./LaunchpadLinkCS.module.css"
 import { useSpring, animated } from "@react-spring/web";
 import Link from "next/link"
 

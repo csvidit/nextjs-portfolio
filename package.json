@@ -16,6 +16,7 @@
     "flubber": "^0.4.2",
     "framer-motion": "^8.0.1",
     "next": "13.0.1",
+    "popmotion": "^11.0.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-spring": "^9.5.5"

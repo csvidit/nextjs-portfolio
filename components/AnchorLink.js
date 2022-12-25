@@ -2,10 +2,11 @@ import styles from "./Font.module.css";
 import Link from "next/link";
 import cs_styles from "./CS.module.css";
 import { motion } from "framer-motion";
+import LittleV from "./LittleV.js";
 
-const divStyles = "self-center font-light text-md flex flex-row text-white";
+const divStyles = "self-center font-semibold flex flex-row text-white p-2 border border-white rounded-lg text-center hover:border-lime-500";
 
-const NavLink = (props) => {
+const AnchorLink = (props) => {
     const href=props.href;
   return (
     <motion.div className={divStyles}>
@@ -14,4 +15,4 @@ const NavLink = (props) => {
   );
 };
 
-export default NavLink;
+export default AnchorLink;

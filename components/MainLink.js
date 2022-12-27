@@ -1,9 +1,9 @@
 import styles from "./Font.module.css";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 const divStyles = "flex flex-row text-xl";
-const linkStyles = "flex flex-col space-y-1 self-center";
+const linkStyles = "flex flex-col self-center";
 const linkLabelStyles = "flex flex-row space-x-2 self-center";
 const linkUnderlineStyles = "border-b border-slate-500 self-center";
 

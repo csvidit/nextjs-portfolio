@@ -11,12 +11,24 @@ const MainLink = (props) => {
   const link = props.link;
   const label = props.label;
 
+  const linkLabelVariants = {
+    animate: { x: 0, skewX: 0, color: "#64748B", fill: "#64748B" },
+    hover: { x: 10, skewX: -10, color: "#FFFFFF", fill: "#FFFFFF" },
+  };
+
+  const linkUnderlineVariants = {
+    animate: {
+      width: [125, 75, 125],
+      transition: { repeat: Infinity, duration: 1.5 },
+    },
+    hover: { width: 125, borderBottomColor: "#0ea5e9" },
+  };
+
   return (
-    <motion.div className={styles.clash_title + " " + divStyles}>
+    <motion.div className={styles.clash_title + " " + divStyles} animate="animate" whileHover="hover">
       <motion.div
         initial={false}
-        animate={{ x: 0, skewX: 0, color: "#64748B", fill: "#64748B"}}
-        whileHover={{ x: 10, skewX: -10, color: "#FFFFFF", fill: "#FFFFFF"}}
+        variants={linkLabelVariants}
         className={linkStyles}
       >
         <Link href={link} className={linkStyles}>
@@ -35,12 +47,11 @@ const MainLink = (props) => {
               />
             </motion.svg>
           </motion.div>
-          <motion.div
-            className={linkUnderlineStyles}
-            animate={{ width: [125, 75, 125] }}
-            transition={{repeat: Infinity, duration: 1.5}}
-          ></motion.div>
         </Link>
+        <motion.div
+          className={linkUnderlineStyles}
+          variants={linkUnderlineVariants}
+        ></motion.div>
       </motion.div>
     </motion.div>
   );

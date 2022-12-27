@@ -1,5 +1,5 @@
 import styles from "./Font.module.css";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 const divStyles = "flex flex-row text-xl";
@@ -8,21 +8,35 @@ const linkLabelStyles = "flex flex-row space-x-2 self-center";
 const linkUnderlineStyles = "border-b border-slate-500 self-center";
 
 const MainLink = (props) => {
-  const link = props.link;
-  const label = props.label;
+  const href = props.href;
+  const animate = props.animate; // this prop can have either "true" or "false" as its value. This controls the perpetual animation of the underline
 
   const linkLabelVariants = {
     animate: { x: 0, skewX: 0, color: "#64748B", fill: "#64748B" },
     hover: { x: 10, skewX: -10, color: "#FFFFFF", fill: "#FFFFFF" },
   };
 
-  const linkUnderlineVariants = {
-    animate: {
-      width: [125, 75, 125],
-      transition: { repeat: Infinity, duration: 1.5 },
-    },
-    hover: { width: 125, borderBottomColor: "#0ea5e9" },
-  };
+  let linkUnderlineVariants;
+  
+  if(animate === "true")
+  {
+    linkUnderlineVariants = {
+      animate: {
+        width: [125, 75, 125],
+        transition: { repeat: Infinity, duration: 1.5 },
+      },
+      hover: { width: 125, borderBottomColor: "#0ea5e9" },
+    };
+  }
+  else
+  {
+    linkUnderlineVariants = {
+      animate: {
+        width: 125
+      },
+      hover: { width: 125, borderBottomColor: "#0ea5e9" },
+    };
+  }
 
   return (
     <motion.div className={styles.clash_title + " " + divStyles} animate="animate" whileHover="hover">
@@ -31,7 +45,7 @@ const MainLink = (props) => {
         variants={linkLabelVariants}
         className={linkStyles}
       >
-        <Link href={link} className={linkStyles}>
+        <Link href={href} className={linkStyles}>
           <motion.div className={linkLabelStyles}>
             <motion.p className="self-center">{props.children}</motion.p>
             <motion.svg

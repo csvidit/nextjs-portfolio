@@ -7,13 +7,7 @@ In-production integrated portfolio, combining my projects in CS, academic papers
 * [react-spring](https://www.react-spring.dev)
 * [popmotion](https://popmotion.io/)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+(c) 2022 Vidit Khandelwal. Please give credit if you are replicating this project or using parts of it. All intellectual content of this website (such as literature, projects, academic papers, etc.) are protected intellectual property unless otherwise stated. 
 
-To run run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 

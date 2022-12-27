@@ -11,6 +11,7 @@ import Navbar from "../components/Navbar";
 import VLink from "../components/VLink";
 import AnchorLink from "../components/AnchorLink";
 import NavLink from "../components/NavLink";
+import Footer from "../components/Footer";
 
 const mainContainerStyles = "w-screen h-screen flex flex-col space-y-6";
 
@@ -32,6 +33,7 @@ export default function Home() {
         <div className={mainContentStyles}>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

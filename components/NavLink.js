@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 const divStyles = "self-center font-light text-md flex flex-row text-white";
 const linkStyles = "flex flex-col space-y-1 self-center";
 const linkLabelStyles = "flex flex-row space-x-2 self-center";
+const linkUnderlineStyles = "";
 
 const NavLink = (props) => {
     const href=props.href;

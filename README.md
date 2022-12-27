@@ -1,5 +1,7 @@
 # nextjs-main-landing
 
+** For the best experience, view on a laptop/PC. There currently are some issues with viewing this website on small mobile screens ** 
+
 In-production integrated portfolio, combining my projects in CS, academic papers, and original literature together. Made in NextJS with a number of other libraries, including
 
 * [tailwindcss](https://tailwindcss.com)

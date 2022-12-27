@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --csblue: #2200C9;
+}
+
 html,
 body {
   padding: 0;

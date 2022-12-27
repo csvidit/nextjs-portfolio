@@ -1,6 +1,6 @@
 import styles from "./Font.module.css";
 import Link from "next/link";
-import cs_styles from "./CS.module.css";
+import cs_styles from "./CS.module.scss";
 import { motion } from "framer-motion";
 import LittleV from "./LittleV.js";
 

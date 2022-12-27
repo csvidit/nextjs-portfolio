@@ -1,12 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Button from "../components/Button.js";
-import JumboTitle from "../components/JumboTitle";
-import JumboSubtitle from "../components/JumboSubtitle";
-import ButtonContainer from "../components/ButtonContainer";
-import MainLink from "../components/MainLink";
-import JumboV from "../components/JumboV";
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import VLink from "../components/VLink";
 import AnchorLink from "../components/AnchorLink";
@@ -25,10 +18,8 @@ export default function Home() {
       <div className={headerContainerStyles}>
         <Head></Head>
         <Navbar type="LIT">
-          <AnchorLink href="/lit">LIT. Home</AnchorLink>
           <NavLink href="/lit/poems">Poems</NavLink>
           <NavLink href="/lit/poems">Short Stories</NavLink>
-          <VLink>launchpad</VLink>
         </Navbar>
         <div className={mainContentStyles}>
         </div>

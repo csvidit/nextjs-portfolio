@@ -1,0 +1,29 @@
+$cs_blue: #2200c9;
+
+:export {
+  cs_blue: $cs_blue;
+}
+
+.cs_text {
+  color: #2200c9;
+}
+
+.cs_bg {
+  background-color: #2200c9;
+}
+
+.cs_border_t {
+  border-top-color: #2200c9;
+}
+
+.cs_border_b {
+  border-bottom-color: #2200c9;
+}
+
+.cs_border_l {
+  border-left-color: #2200c9;
+}
+
+.cs_border_r {
+  border-right-color: #2200c9;
+}

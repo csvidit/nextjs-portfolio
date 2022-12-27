@@ -6,6 +6,7 @@ import Subtitle2 from "../components/Subtitle2";
 import LaunchpadLinksContainer from "../components/LaunchpadLinksContainer";
 import LaunchpadLinkAll from "../components/LaunchpadLinkAll";
 import LaunchpadLinkCS from "../components/LaunchpadLinkCS";
+import JumboBox from "../components/JumboBox";
 
 const mainContainerStyles =
   "w-screen h-screen flex flex-col space-y-6 justify-center";
@@ -45,13 +46,15 @@ export default function Launchpad() {
         </animated.div> */}
         <animated.div style={{ ...springs1 }}>
           <LaunchpadLinksContainer>
-            <LaunchpadLinkAll link="/all">ALL</LaunchpadLinkAll>
-            <LaunchpadLinkAll link="https://github.com/csvidit">CODING PROJECTS</LaunchpadLinkAll>
-            <LaunchpadLinkAll link="/lit">LITERATURE</LaunchpadLinkAll>
-            <LaunchpadLinkAll link="/acad">ACADEMIC PAPERS</LaunchpadLinkAll>
           </LaunchpadLinksContainer>
+          <JumboBox>Coding Projects</JumboBox>
         </animated.div>
       </div>
     </div>
   );
 }
+
+{/* <LaunchpadLinkAll link="/all">ALL</LaunchpadLinkAll>
+            <LaunchpadLinkAll link="https://github.com/csvidit">CODING PROJECTS</LaunchpadLinkAll>
+            <LaunchpadLinkAll link="/lit">LITERATURE</LaunchpadLinkAll>
+            <LaunchpadLinkAll link="/acad">ACADEMIC PAPERS</LaunchpadLinkAll> */}

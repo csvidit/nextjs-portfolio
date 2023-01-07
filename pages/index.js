@@ -6,7 +6,7 @@ import Button from "../components/Button.js";
 import JumboTitle from "../components/JumboTitle";
 import JumboSubtitle from "../components/JumboSubtitle";
 import MainLink from "../components/MainLink";
-import JumboV from "../components/JumboV";
+import JumboV from "../components/AnimatedJumboV";
 import { motion, useSpring } from "framer-motion";
 import Footer from "../components/Footer";
 

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import LaunchpadLinkAll from "./LaunchpadLinkAll";
 import font from "./Font.module.css";
 import JumboTitle from "./JumboTitle";
 import cs from "./CS.module.scss";
@@ -63,7 +62,7 @@ const JumboBox = (props) => {
       variants={variants1}
     >
       <motion.div className="self-center opacity-0" variants={variants3}>
-        <JumboCSP></JumboCSP>
+        {/* <JumboCSP></JumboCSP> */}
       </motion.div>
       <motion.div
         id="content_container"

@@ -1,7 +1,6 @@
 import Head from "next/head";
 import JumboTitle from "../components/JumboTitle";
 import { useSpring, animated } from "@react-spring/web";
-import LaunchpadLinksContainer from "../components/LaunchpadLinksContainer";
 import JumboBox from "../components/JumboBox";
 import LaunchpadBoxesContainer from "../components/LaunchpadBoxesContainer";
 import LaunchpadSlider from "../components/LaunchpadSlider";
@@ -45,7 +44,7 @@ export default function Launchpad() {
       <div className="{headerContainerStyles}">
         <animated.div className="ml-5 mr-5 xl:ml-20 xl:mr-20" style={{ ...springs0 }} onClick={nonClick}>
           <JumboTitle spaced="false">Launchpad</JumboTitle>
-          <ActionPrompt className="mb-6">Swipe through the boxes below</ActionPrompt>
+          <div className="mb-6"><ActionPrompt>Swipe through the boxes below and hover for more info</ActionPrompt></div>
         </animated.div>
         <animated.div style={{ ...springs1 }}>
           <LaunchpadBoxesContainer>
@@ -55,11 +54,4 @@ export default function Launchpad() {
       </div>
     </div>
   );
-}
-
-{
-  /* <LaunchpadLinkAll link="/all">ALL</LaunchpadLinkAll>
-            <LaunchpadLinkAll link="https://github.com/csvidit">CODING PROJECTS</LaunchpadLinkAll>
-            <LaunchpadLinkAll link="/lit">LITERATURE</LaunchpadLinkAll>
-            <LaunchpadLinkAll link="/acad">ACADEMIC PAPERS</LaunchpadLinkAll> */
 }

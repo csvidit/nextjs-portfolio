@@ -1,12 +1,17 @@
 import Head from "next/head";
-import JumboSubtitle from "../components/JumboSubtitle";
 import JumboTitle from "../components/JumboTitle";
 import { useSpring, animated } from "@react-spring/web";
-import Subtitle2 from "../components/Subtitle2";
 import LaunchpadLinksContainer from "../components/LaunchpadLinksContainer";
-import LaunchpadLinkAll from "../components/LaunchpadLinkAll";
-import LaunchpadLinkCS from "../components/LaunchpadLinkCS";
 import JumboBox from "../components/JumboBox";
+import LaunchpadBoxesContainer from "../components/LaunchpadBoxesContainer";
+import LaunchpadSlider from "../components/LaunchpadSlider";
+import KeenSlider from "../components/KeenSlider";
+import KeenSliderContainer from "../components/KeenSliderContainer";
+import ActionPrompt from "../components/ActionPrompt";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// gsap.registerPlugin(ScrollTrigger);
 
 const mainContainerStyles =
   "w-screen h-screen flex flex-col space-y-6 justify-center";
@@ -37,24 +42,24 @@ export default function Launchpad() {
   return (
     <div className={mainContainerStyles}>
       <Head></Head>
-      <div className={headerContainerStyles}>
-        <animated.div style={{ ...springs0 }} onClick={nonClick}>
+      <div className="{headerContainerStyles}">
+        <animated.div className="ml-5 mr-5 xl:ml-20 xl:mr-20" style={{ ...springs0 }} onClick={nonClick}>
           <JumboTitle>Launchpad</JumboTitle>
+          <ActionPrompt>Swipe through the boxes below</ActionPrompt>
         </animated.div>
-        {/* <animated.div style={{ ...springs1 }}>
-          <Subtitle2>This world is massive!</Subtitle2>
-        </animated.div> */}
         <animated.div style={{ ...springs1 }}>
-          <LaunchpadLinksContainer>
-          </LaunchpadLinksContainer>
-          <JumboBox>Coding Projects</JumboBox>
+          <LaunchpadBoxesContainer>
+            <LaunchpadSlider></LaunchpadSlider>
+          </LaunchpadBoxesContainer>
         </animated.div>
       </div>
     </div>
   );
 }
 
-{/* <LaunchpadLinkAll link="/all">ALL</LaunchpadLinkAll>
+{
+  /* <LaunchpadLinkAll link="/all">ALL</LaunchpadLinkAll>
             <LaunchpadLinkAll link="https://github.com/csvidit">CODING PROJECTS</LaunchpadLinkAll>
             <LaunchpadLinkAll link="/lit">LITERATURE</LaunchpadLinkAll>
-            <LaunchpadLinkAll link="/acad">ACADEMIC PAPERS</LaunchpadLinkAll> */}
+            <LaunchpadLinkAll link="/acad">ACADEMIC PAPERS</LaunchpadLinkAll> */
+}

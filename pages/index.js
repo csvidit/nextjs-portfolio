@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import font from "../components/Font.module.css";
+import Font from "../components/Font.module.css";
 import Button from "../components/Button.js";
 import JumboTitle from "../components/JumboTitle";
 import JumboSubtitle from "../components/JumboSubtitle";
@@ -46,6 +46,7 @@ export default function Home() {
             initial={{ x: -50, opacity: 0 }}
             transition={{ ease: "anticipate", type: "spring" }}
           >
+            <p className={"text-red-600 font-light mb-6 "+Font.clash}>STILL UNDER DEVELOPMENT</p>
             <JumboSubtitle>The world of</JumboSubtitle>
             <JumboTitle spaced="true">Vidit Khandelwal</JumboTitle>
           </motion.div>

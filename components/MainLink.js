@@ -52,6 +52,7 @@ const MainLink = (props) => {
               xmlns="http://www.w3.org/2000/svg"
               width="20"
               height="20"
+              color="currentColor"
               className="bi bi-arrow-right self-center"
               viewBox="0 0 16 16"
             >

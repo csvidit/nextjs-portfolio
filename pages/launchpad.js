@@ -44,8 +44,8 @@ export default function Launchpad() {
       <Head></Head>
       <div className="{headerContainerStyles}">
         <animated.div className="ml-5 mr-5 xl:ml-20 xl:mr-20" style={{ ...springs0 }} onClick={nonClick}>
-          <JumboTitle>Launchpad</JumboTitle>
-          <ActionPrompt>Swipe through the boxes below</ActionPrompt>
+          <JumboTitle spaced="false">Launchpad</JumboTitle>
+          <ActionPrompt className="mb-6">Swipe through the boxes below</ActionPrompt>
         </animated.div>
         <animated.div style={{ ...springs1 }}>
           <LaunchpadBoxesContainer>

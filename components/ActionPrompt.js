@@ -6,6 +6,7 @@ const linkStyles = "flex flex-col self-center";
 const linkLabelStyles = "flex flex-row space-x-2 self-center";
 
 const ActionPrompt = (props) => {
+
   return (
     <motion.div className={"self-center flex flex-row text-xl space-x-2 text-slate-500 "+Font.clash}>
       <motion.p className="self-center">{props.children}</motion.p>

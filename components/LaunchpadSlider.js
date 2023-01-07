@@ -23,7 +23,7 @@ export default class LaunchpadSlider extends React.Component {
           <JumboBox href="/cs" description="Check out all my coding projects across languages, with demo
               videos, screenshots, snippet discussions, and more." accent="#2200c9" linkLabel="Let's go!">Coding Projects</JumboBox>
           <JumboBox href="/lit" description="Read all my original creative literature in English." accent="#FF5200" linkLabel="Go to LIT. Portfolio">Literature</JumboBox>
-          <JumboBox>Academic Papers</JumboBox>
+          <JumboBox href="/acad" description="Some of my best argumentative and research work, especially in Economics." accent="#18002E" linkLabel="Go to academic documents">Academic Papers</JumboBox>
         </Slider>
       </div>
     );

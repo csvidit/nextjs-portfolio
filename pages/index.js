@@ -47,7 +47,7 @@ export default function Home() {
             transition={{ ease: "anticipate", type: "spring" }}
           >
             <JumboSubtitle>The world of</JumboSubtitle>
-            <JumboTitle>Vidit Khandelwal</JumboTitle>
+            <JumboTitle spaced="true">Vidit Khandelwal</JumboTitle>
           </motion.div>
           <motion.div
             animate={{ opacity: 1 }}

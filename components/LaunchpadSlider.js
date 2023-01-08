@@ -9,7 +9,7 @@ export default class LaunchpadSlider extends React.Component {
     const settings = {
       dots: false,
       infinite: true,
-    //   speed: 500,
+      //   speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
@@ -20,12 +20,33 @@ export default class LaunchpadSlider extends React.Component {
     return (
       <div className="">
         <Slider {...settings}>
-          <JumboBox href="/cs" description="Check out all my coding projects across languages, with demo
-              videos, screenshots, snippet discussions, and more." accent="#2200c9" linkLabel="Let's go!">Coding Projects</JumboBox>
-          <JumboBox href="/lit" description="Read all my original creative literature in English." accent="#FF5200" linkLabel="Go to LIT. Portfolio">Literature</JumboBox>
-          <JumboBox href="/acad" description="Some of my best argumentative and research work, especially in Economics." accent="#18002E" linkLabel="Go to academic documents">Academic Papers</JumboBox>
+          <JumboBox
+            href="/cs"
+            description="Check out all my coding projects across languages, with demo
+              videos, screenshots, snippet discussions, and more."
+            accent="#2200c9"
+            linkLabel="Let's go!"
+          >
+            Coding Projects
+          </JumboBox>
+          <JumboBox
+            href="/lit"
+            description="Read all my original creative literature in English."
+            accent="#FF5200"
+            linkLabel="Go to LIT. Portfolio"
+          >
+            Literature
+          </JumboBox>
+          <JumboBox
+            href="/acad"
+            description="Some of my best argumentative and research work, especially in Economics."
+            accent="#18002E"
+            linkLabel="Go to academic documents"
+          >
+            Academic Papers
+          </JumboBox>
         </Slider>
       </div>
     );
   }
-};
+}

@@ -2,13 +2,19 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Font from "../components/Font.module.css";
-import Button from "../components/Button.js";
 import JumboTitle from "../components/JumboTitle";
 import JumboSubtitle from "../components/JumboSubtitle";
 import MainLink from "../components/MainLink";
 import JumboV from "../components/AnimatedJumboV";
 import { motion, useSpring } from "framer-motion";
 import Footer from "../components/Footer";
+import { ApolloProvider } from "react-apollo";
+import ApolloClient from "apollo-boost";
+// import * as serviceWorker from "./serviceWorker";
+
+const client = new ApolloClient({
+  uri: process.env.HYGRAPH_ENDPOINT,
+});
 
 const mainContainerStyles =
   "w-screen h-screen flex flex-col space-y-6 justify-center";
@@ -37,32 +43,38 @@ export default function Home() {
   };
 
   return (
-    <div className={mainContainerStyles}>
-      <Head></Head>
-      <div className={mainContentStyles}>
-        <motion.div className="self-center">
-          <motion.div
-            animate={{ x: 0, opacity: 1 }}
-            initial={{ x: -50, opacity: 0 }}
-            transition={{ ease: "anticipate", type: "spring" }}
-          >
-            <p className={"text-red-600 font-light mb-6 "+Font.clash}>STILL UNDER DEVELOPMENT</p>
-            <JumboSubtitle>The world of</JumboSubtitle>
-            <JumboTitle spaced="true">Vidit Khandelwal</JumboTitle>
+    <ApolloProvider client={client}>
+      <div className={mainContainerStyles}>
+        <Head></Head>
+        <div className={mainContentStyles}>
+          <motion.div className="self-center">
+            <motion.div
+              animate={{ x: 0, opacity: 1 }}
+              initial={{ x: -50, opacity: 0 }}
+              transition={{ ease: "anticipate", type: "spring" }}
+            >
+              <p className={"mb-6 font-light text-red-600 " + Font.clash}>
+                STILL UNDER DEVELOPMENT
+              </p>
+              <JumboSubtitle>The world of</JumboSubtitle>
+              <JumboTitle spaced="true" color="lime">
+                Vidit Khandelwal
+              </JumboTitle>
+            </motion.div>
+            <motion.div
+              animate={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{ type: "spring", delay: 0.4 }}
+            >
+              <MainLink href="/launchpad" animate="true">
+                Let's dive in
+              </MainLink>
+            </motion.div>
           </motion.div>
-          <motion.div
-            animate={{ opacity: 1 }}
-            initial={{ opacity: 0 }}
-            transition={{ type: "spring", delay: 0.4 }}
-          >
-            <MainLink href="/launchpad" animate="true">
-              Let's dive in
-            </MainLink>
-          </motion.div>
-        </motion.div>
-        <motion.div className="self-center"></motion.div>
+          <motion.div className="self-center"></motion.div>
+        </div>
+        <Footer></Footer>
       </div>
-      <Footer></Footer>
-    </div>
+    </ApolloProvider>
   );
 }

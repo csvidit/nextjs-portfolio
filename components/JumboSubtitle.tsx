@@ -1,4 +1,5 @@
 import styles from "./Font.module.css";
+import React from "react"
 
 const divStyles = "flex flex-row mr-10 text-3xl text-lime-400 uppercase"
 

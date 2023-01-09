@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
 import font from "./Font.module.css";
 import JumboTitle from "./JumboTitle";
-import cs from "./CS.module.scss";
-import Link from "next/link";
 import JumboBoxButton from "./JumboBoxButton";
 import JumboCSP from "./JumboCSP";
+import React from "react";
 
 const divStyles =
   "flex flex-row justify-between ml-5 mr-5 xl:ml-20 xl:mr-20 self-center h-96 border border-lime-500 rounded-xl";

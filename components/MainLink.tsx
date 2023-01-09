@@ -1,6 +1,7 @@
 import styles from "./Font.module.css";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import React from "react";
 
 const divStyles = "flex flex-row text-xl";
 const linkStyles = "flex flex-col self-center";

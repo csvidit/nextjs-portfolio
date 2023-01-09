@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import HamburgerMenuContainer from "../components/HamburgerMenuContainer";
 import ContentCard from "../components/ContentCard";
 import ContentCardContainer from "../components/ContentCardContainer";
+import JumboTitle from "../components/JumboTitle";
 
 const mainContainerStyles = "w-screen h-screen flex flex-col space-y-6";
 
@@ -24,6 +25,93 @@ export default function Home() {
           <HamburgerMenuContainer></HamburgerMenuContainer>
         </div>
         <div className={mainContentStyles}>
+        <JumboTitle spaced="true" color="white">All Repositories</JumboTitle>
+          <ContentCardContainer>
+            <ContentCard accent="violet" href="/launchpad" title="New Poem">
+              Check out my newest poem from the Journal series. This one is all
+              about coffee and contemplation, just like the song from Nic
+              Howell.
+            </ContentCard>
+            <ContentCard accent="blue" href="/launchpad" title="New Poem">
+              Check out my newest poem from the Journal series. This one is all
+              about coffee and contemplation, just like the song from Nic
+              Howell.
+            </ContentCard>
+            <ContentCard accent="orange" href="/launchpad" title="New Poem">
+              Check out my newest poem from the Journal series. This one is all
+              about coffee and contemplation, just like the song from Nic
+              Howell.
+            </ContentCard>
+            <ContentCard accent="blue" href="/launchpad" title="New Poem">
+              Check out my newest poem from the Journal series. This one is all
+              about coffee and contemplation, just like the song from Nic
+              Howell.
+            </ContentCard>
+            <ContentCard accent="violet" href="/launchpad" title="New Poem">
+              Check out my newest poem from the Journal series. This one is all
+              about coffee and contemplation, just like the song from Nic
+              Howell.
+            </ContentCard>
+            <ContentCard accent="blue" href="/launchpad" title="New Poem">
+              Check out my newest poem from the Journal series. This one is all
+              about coffee and contemplation, just like the song from Nic
+              Howell.
+            </ContentCard>
+            <ContentCard accent="orange" href="/launchpad" title="New Poem">
+              Check out my newest poem from the Journal series. This one is all
+              about coffee and contemplation, just like the song from Nic
+              Howell.
+            </ContentCard>
+            <ContentCard accent="blue" href="/launchpad" title="New Poem">
+              Check out my newest poem from the Journal series. This one is all
+              about coffee and contemplation, just like the song from Nic
+              Howell.
+            </ContentCard>
+          </ContentCardContainer>
+          <JumboTitle spaced="true" color="white">All Repositories</JumboTitle>
+          <ContentCardContainer>
+            <ContentCard accent="violet" href="/launchpad" title="New Poem">
+              Check out my newest poem from the Journal series. This one is all
+              about coffee and contemplation, just like the song from Nic
+              Howell.
+            </ContentCard>
+            <ContentCard accent="blue" href="/launchpad" title="New Poem">
+              Check out my newest poem from the Journal series. This one is all
+              about coffee and contemplation, just like the song from Nic
+              Howell.
+            </ContentCard>
+            <ContentCard accent="orange" href="/launchpad" title="New Poem">
+              Check out my newest poem from the Journal series. This one is all
+              about coffee and contemplation, just like the song from Nic
+              Howell.
+            </ContentCard>
+            <ContentCard accent="blue" href="/launchpad" title="New Poem">
+              Check out my newest poem from the Journal series. This one is all
+              about coffee and contemplation, just like the song from Nic
+              Howell.
+            </ContentCard>
+            <ContentCard accent="violet" href="/launchpad" title="New Poem">
+              Check out my newest poem from the Journal series. This one is all
+              about coffee and contemplation, just like the song from Nic
+              Howell.
+            </ContentCard>
+            <ContentCard accent="blue" href="/launchpad" title="New Poem">
+              Check out my newest poem from the Journal series. This one is all
+              about coffee and contemplation, just like the song from Nic
+              Howell.
+            </ContentCard>
+            <ContentCard accent="orange" href="/launchpad" title="New Poem">
+              Check out my newest poem from the Journal series. This one is all
+              about coffee and contemplation, just like the song from Nic
+              Howell.
+            </ContentCard>
+            <ContentCard accent="blue" href="/launchpad" title="New Poem">
+              Check out my newest poem from the Journal series. This one is all
+              about coffee and contemplation, just like the song from Nic
+              Howell.
+            </ContentCard>
+          </ContentCardContainer>
+          <JumboTitle spaced="true" color="white">All Repositories</JumboTitle>
           <ContentCardContainer>
             <ContentCard accent="violet" href="/launchpad" title="New Poem">
               Check out my newest poem from the Journal series. This one is all
@@ -68,7 +156,7 @@ export default function Home() {
           </ContentCardContainer>
         </div>
       </div>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 }

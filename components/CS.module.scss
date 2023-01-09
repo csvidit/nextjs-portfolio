@@ -5,25 +5,25 @@ $cs_blue: #2200c9;
 }
 
 .cs_text {
-  color: #2200c9;
+  color: $cs_blue;
 }
 
 .cs_bg {
-  background-color: #2200c9;
+  background-color: $cs_blue;
 }
 
 .cs_border_t {
-  border-top-color: #2200c9;
+  border-top-color: $cs_blue;
 }
 
 .cs_border_b {
-  border-bottom-color: #2200c9;
+  border-bottom-color: $cs_blue;
 }
 
 .cs_border_l {
-  border-left-color: #2200c9;
+  border-left-color: $cs_blue;
 }
 
 .cs_border_r {
-  border-right-color: #2200c9;
+  border-right-color: $cs_blue;
 }

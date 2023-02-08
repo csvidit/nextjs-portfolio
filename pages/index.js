@@ -8,13 +8,13 @@ import MainLink from "../components/MainLink";
 import JumboV from "../components/AnimatedJumboV";
 import { motion, useSpring } from "framer-motion";
 import Footer from "../components/Footer";
-import { ApolloProvider } from "react-apollo";
-import ApolloClient from "apollo-boost";
+// import { ApolloProvider } from "react-apollo";
+// import ApolloClient from "apollo-boost";
 // import * as serviceWorker from "./serviceWorker";
 
-const client = new ApolloClient({
-  uri: process.env.HYGRAPH_ENDPOINT,
-});
+// const client = new ApolloClient({
+//   uri: process.env.HYGRAPH_ENDPOINT,
+// });
 
 const mainContainerStyles =
   "w-screen h-screen flex flex-col space-y-6 justify-center";
@@ -43,7 +43,6 @@ export default function Home() {
   };
 
   return (
-    <ApolloProvider client={client}>
       <div className={mainContainerStyles}>
         <Head></Head>
         <div className={mainContentStyles}>
@@ -75,6 +74,5 @@ export default function Home() {
         </div>
         <Footer></Footer>
       </div>
-    </ApolloProvider>
   );
 }
